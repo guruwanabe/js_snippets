@@ -60,3 +60,6 @@
 	window.BSMTabs = BSMTabs;
 
 })(window);
+
+// Usage
+// new BSMTabs(document.getElementById('bsm-tabs'));
