@@ -3,7 +3,7 @@
  *
  * @param $string
  * @param $quotes
- * @param $preserveAmp
+ * @param $preserveAmp {optional}
  * @return string
  */
 function htmlEntities($string, $quotes, $preserveAmp){
@@ -26,8 +26,14 @@ function htmlEntities($string, $quotes, $preserveAmp){
 	}
 
 	if($preserveAmp){
-		string = String($string).replace(/&amp;/g, '&')
+		string.replace(/&amp;/g, '&')
 	}
 
 	return string;
 }
+
+//Call
+var str = 'Some string <script'+'><'+'/script'+'> & "'+"'"+'value here'
+str = htmlEntities(str, 'ENT_QUOTES');
+
+console.log(str);
