@@ -1,5 +1,6 @@
 function toogleStateText(obj){
 	var el = $(obj);
+	//console.log(el)
 	if (el.text() == el.data('text-swap')) {
 		el.text(el.attr('title'));
 	} else {
@@ -8,4 +9,4 @@ function toogleStateText(obj){
 	}
 }
 toogleStateText('#testOOP');
-console.log(el)
+
