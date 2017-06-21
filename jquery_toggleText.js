@@ -1,5 +1,5 @@
 function toogleStateText(obj){
-	var el = $(obj);
+	var el = $obj instanceof jQuery ? $obj : $(obj);
 	//console.log(el)
 	if (el.text() == el.data('text-swap')) {
 		el.text(el.attr('title'));
