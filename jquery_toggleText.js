@@ -7,5 +7,5 @@ function toogleStateText(obj){
 		el.text(el.data('text-swap'));
 	}
 }
-var newObj = new  toogleStateText('#testOOP');
+toogleStateText('#testOOP');
 console.log(el)
