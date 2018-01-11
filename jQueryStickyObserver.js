@@ -5,7 +5,7 @@
   function addSentinels(element, className, height, offset) {
       var el = document.querySelector(element);
       var sentinel = document.createElement('div');
-      sentinel.classList.add('sticky_sentinel', className);
+      sentinel.classList.add('sticky-sentinel', className);
       sentinel.style.height = height+"px";
       sentinel.style.top = offset+"px";
       return el.appendChild(sentinel);
@@ -57,7 +57,7 @@
   }
   //Run if supported
   if(window.IntersectionObserver){
-    observer("sticky_sentinel--top");
+    observer("sticky-sentinel-top");
     $(document).on('sticky-change', function (e) {
         $(e.detail.target).toggleClass("stuck", e.detail.stuck);
     });
